@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/common.css" rel="stylesheet" type="text/css" media="all">
+    <title>vim-keyboard</title>
+  </head>
+  <body>
+    <h1>vimのショートカット一覧</h1>
+    <img src="image/keyboard.png">
+
+    <ul><h2>Normal</h2>
+      <li>0		行頭に移動</li>
+      <li>a		挿入モード(カーソルの直後)</li>
+      <li>b		前の単語の先頭に移動</li>
+      <li>cw	カーソルから後ろの単語を消し、挿入モードへ</li>
+      <li>c$	行末まで削除して挿入モード ※ Cと同じ</li>
+      <li>[N]d	([N]行)切り取り</li>
+      <li>dd	1行切り取り</li>
+      <li>de	単語の削除(末尾の空白を含まない)</li>
+      <li>dw	単語の削除(末尾の空白を含む)</li>
+      <li>d$	行末まで削除</li>
+      <li>[N]e	([N]個)次の単語の末尾に移動</li>
+      <li>f[word]	カーソルがある行の右側に存在する[word]に移動</li>
+      <li>gg		ページ先頭へ移動</li>
+      <li>gt	右のタブへ</li>
+      <li>[N]gt	[N]番目のタブへ</li>
+      <li>gT	左のタブへ</li>
+      <li>h		←</li>
+      <li>I		挿入モード</li>
+      <li>J		↓</li>
+      <li>k		↑</li>
+      <li>l		→</li>
+      <li>n		次を検索</li>
+      <li>o		挿入モード(下に新しい行を追加)</li>
+      <li>p		貼り付け</li>
+      <li>q[a-z]…q	マクロの開始と終了</li>
+      <li>r		1文字の置換</li>
+      <li>t		%(対応する括弧に移動)</li>
+      <li>u		アンドゥ</li>
+      <li>v		領域選択</li>
+      <li>[N]w	([N]個)次の単語の先頭に移動</li>
+      <li>x		1文字削除</li>
+      <li>y		ヤンク</li>
+      <li>za		折りたたみの開け閉め</li>
+      <li>zz		カーソルがある行を画面中央にする</li>
+      <li>-		スイッチ</li>
+      <li>.		直前の動作の繰り返し</li>
+      <li>/		部分検索</li>
+      <li>[N]@[a-z]	([N]回)マクロ[a-z]を実行</li>
+      <li>/[word]	[word]を検索</li>
+    </ul>
+
+    <ul>
+      <h2>Shift</h2>
+      <li>A		挿入モード(行末から)</li>
+      <li>C		挿入モード(行末まで削除して挿入モード)</li>
+      <li>D		切り取り(カーソル位置から行末まで)</li>
+      <li>F[word]	カーソルがある行の左側に存在する[word]に移動</li>
+      <li>G		ページ末尾に移動</li>
+      <li>H		^(空白を含まない行頭に移動)</li>
+      <li>I		挿入モード(行頭から)</li>
+      <li>[N]J		([N])段落下に移動</li>
+      <li>[N]K	([N])段落上に移動</li>
+      <li>L		$(行末に移動)</li>
+      <li>N		前を検索</li>
+      <li>O		挿入モード(上に新しい行を追加)</li>
+      <li>P		貼り付け(カーソル位置の直前)</li>
+      <li>R		置換(上書き)モード</li>
+      <li>V		行選択</li>
+      <li>#		カーソル位置にある単語を前方検索</li>
+      <li>=		オートインデント</li>
+      <li>*		カーソル位置にある単語を後方検索</li>
+      <li><		インデントを左にずらす</li>
+      <li>>		インデントを右にずらす</li>
+    </ul>
+
+    <ul>
+      <h2>Control</h2>
+      <li><C-a>	インクリメント</li>
+      <li><C-b>	1画面上にスクロール</li>
+      <li><C-c>	<C+]>(ノーマルモードへ)</li>
+      <li><C-d>	半画面下にスクロール</li>
+      <li><C-f>	1画面下にスクロール</li>
+      <li><C-m>	Enter</li>
+      <li><C-p>	単語補完</li>
+      <li><C-r>	リドゥ</li>
+      <li><C-u>	半画面上にスクロール</li>
+      <li><C-w>	ウィンドウコマンド</li>
+      <li>	c	現在のウィンドウを閉じる</li>
+      <li>	k, j, h, l	フォーカスを移動</li>
+      <li>	o	現在のウィンドウ以外を閉じる</li>
+      <li>	+, >	バッファを縦・横に広げる</li>
+      <li>	-, <	バッファを縦・横に狭める</li>
+      <li><C-x>	デクリメント</li>
+      <li><C-z>	空白改行の挿入</li>
+      <li><C--><C-->	(ヴィジュアルモード)選択した行のコメントアウト</li>
+    </ul>
+  </body>
+</html>
